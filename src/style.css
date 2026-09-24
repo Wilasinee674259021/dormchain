@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  color: #172033;
+  background: #f5f7ff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1050px;
+  margin: auto;
+  padding: 45px 24px 70px;
+}
+
+/* HEADER */
+
+header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 800;
+  color: #312e81;
+}
+
+header p {
+  margin: 10px 0 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+/* HERO */
+
+.hero {
+  background: white;
+  border-radius: 24px;
+  padding: 45px 30px;
+  margin-bottom: 24px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.07);
+}
+
+.hero h2 {
+  margin: 0 0 10px;
+  font-size: 28px;
+  color: #111827;
+}
+
+.hero p {
+  color: #64748b;
+  margin: 8px 0 24px;
+}
+
+button {
+  border: 0;
+  border-radius: 12px;
+  padding: 13px 20px;
+
+  background: #4f46e5;
+  color: white;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+#walletAddress {
+  margin: 18px auto 0;
+  max-width: 650px;
+
+  padding: 12px 15px;
+
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+
+  color: #64748b;
+  font-size: 13px;
+
+  word-break: break-all;
+}
+
+/* MAIN CARDS */
+
+.contract-card,
+.history-card {
+  background: white;
+  border-radius: 20px;
+
+  padding: 30px;
+
+  margin-bottom: 24px;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow:
+    0 12px 35px rgba(15, 23, 42, 0.06);
+}
+
+.contract-card h2,
+.history-card h2 {
+  margin: 0;
+
+  font-size: 22px;
+  color: #111827;
+}
+
+/* CONTRACT INFO */
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 14px;
+
+  margin-top: 25px;
+}
+
+.info p {
+  margin: 0;
+
+  padding: 17px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 12px;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+.info strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #111827;
+}
+
+/* ACTIONS */
+
+.actions {
+  margin-top: 28px;
+  padding-top: 25px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.actions h3 {
+  margin: 0 0 16px;
+
+  font-size: 17px;
+}
+
+.actions input {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  margin-bottom: 14px;
+
+  border: 1px solid #dbe2ea;
+  border-radius: 10px;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  outline: none;
+}
+
+.actions input:focus {
+  border-color: #6366f1;
+}
+
+.actions button {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+#contractStatus {
+  margin: 20px 0 0;
+
+  padding: 12px 15px;
+
+  border-radius: 10px;
+
+  background: #eff6ff;
+
+  color: #1d4ed8;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ================================
+   HISTORY
+================================ */
+
+.history-card {
+  padding-bottom: 32px;
+}
+
+.history-card h2 {
+  margin: 0;
+}
+
+.history-description {
+  margin: 10px 0 22px;
+
+  color: #64748b;
+  font-size: 14px;
+}
+
+/*
+   สำคัญ:
+   historyList แยกออกจากปุ่มอย่างชัดเจน
+*/
+
+#historyList {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  margin-top: 30px;
+}
+
+/* HISTORY CARD */
+
+.history-item {
+  width: 100%;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: white !important;
+
+  border: 1px solid #e2e8f0 !important;
+
+  border-radius: 16px !important;
+
+  overflow: hidden;
+
+  box-shadow: 0 5px 15px rgba(15, 23, 42, 0.05);
+}
+
+/* HISTORY HEADER */
+
+.history-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 18px 20px;
+
+  background: #f8faff;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.history-number {
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #111827;
+}
+
+.history-id {
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  background: #eef2ff;
+
+  color: #4338ca;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* HISTORY CONTENT */
+
+.history-row {
+  display: grid;
+
+  grid-template-columns: 150px 1fr;
+
+  align-items: center;
+
+  min-height: 55px;
+
+  padding: 0 20px;
+
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.history-row:last-child {
+  border-bottom: 0;
+}
+
+.history-label {
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+.history-value {
+  color: #111827;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  word-break: break-all;
+}
+
+.history-tx {
+  color: #4f46e5;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  word-break: break-all;
+}
+
+.history-tx:hover {
+  text-decoration: underline;
+}
+
+/* LOADING / EMPTY */
+
+.history-loading,
+.history-empty {
+  margin: 0;
+
+  padding: 20px;
+
+  text-align: center;
+
+  background: #f8fafc;
+
+  border-radius: 12px;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .container {
+    padding: 30px 15px 50px;
+  }
+
+  header h1 {
+    font-size: 38px;
+  }
+
+  .hero {
+    padding: 35px 20px;
+  }
+
+  .contract-card,
+  .history-card {
+    padding: 20px;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .actions button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .history-header {
+    padding: 16px;
+  }
+
+  .history-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+
+    padding: 13px 16px;
+  }
+}
